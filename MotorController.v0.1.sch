@@ -14453,22 +14453,30 @@ diameter 2 mm, horizontal, grid 7.62 mm</description>
 <rectangle x1="2.286" y1="-0.254" x2="2.921" y2="0.254" layer="21"/>
 <rectangle x1="-2.921" y1="-0.254" x2="-2.286" y2="0.254" layer="21"/>
 </package>
-<package name="C1702-15">
+<package name="DO34Z7">
 <description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
-diameter 3.5 mm, horizontal, grid 15.24 mm</description>
-<wire x1="-4.572" y1="-1.778" x2="-4.572" y2="1.778" width="0.1524" layer="21"/>
-<wire x1="4.572" y1="1.778" x2="-4.572" y2="1.778" width="0.1524" layer="21"/>
-<wire x1="4.572" y1="1.778" x2="4.572" y2="-1.778" width="0.1524" layer="21"/>
-<wire x1="-4.572" y1="-1.778" x2="4.572" y2="-1.778" width="0.1524" layer="21"/>
-<wire x1="7.62" y1="0" x2="6.096" y2="0" width="1.1176" layer="51"/>
-<wire x1="-7.62" y1="0" x2="-6.096" y2="0" width="1.1176" layer="51"/>
-<pad name="C" x="-7.62" y="0" drill="1.397" shape="long"/>
-<pad name="A" x="7.62" y="0" drill="1.397" shape="long"/>
-<text x="-4.572" y="2.159" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.794" y="-1.397" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-3.81" y1="-1.778" x2="-3.302" y2="1.778" layer="21"/>
-<rectangle x1="4.572" y1="-0.5334" x2="5.9436" y2="0.5334" layer="21"/>
-<rectangle x1="-5.9436" y1="-0.5334" x2="-4.572" y2="0.5334" layer="21"/>
+diameter 1.8 mm, horizontal, grid 7.62 mm</description>
+<wire x1="-1.524" y1="-0.889" x2="1.524" y2="-0.889" width="0.1524" layer="21"/>
+<wire x1="1.524" y1="0.889" x2="-1.524" y2="0.889" width="0.1524" layer="21"/>
+<wire x1="1.524" y1="-0.889" x2="1.524" y2="0.889" width="0.1524" layer="21"/>
+<wire x1="-1.524" y1="0.889" x2="-1.524" y2="-0.889" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="0" x2="2.921" y2="0" width="0.508" layer="51"/>
+<wire x1="-3.81" y1="0" x2="-2.921" y2="0" width="0.508" layer="51"/>
+<wire x1="-0.508" y1="0" x2="-0.127" y2="0" width="0.1524" layer="21"/>
+<wire x1="0.889" y1="0.508" x2="0.889" y2="-0.508" width="0.1524" layer="21"/>
+<wire x1="0.889" y1="-0.508" x2="-0.127" y2="0" width="0.1524" layer="21"/>
+<wire x1="-0.127" y1="0" x2="1.27" y2="0" width="0.1524" layer="21"/>
+<wire x1="-0.127" y1="0" x2="0.889" y2="0.508" width="0.1524" layer="21"/>
+<wire x1="-0.127" y1="0" x2="-0.127" y2="-0.508" width="0.1524" layer="21"/>
+<wire x1="0.127" y1="0.508" x2="-0.127" y2="0.508" width="0.1524" layer="21"/>
+<wire x1="-0.127" y1="0.508" x2="-0.127" y2="0" width="0.1524" layer="21"/>
+<pad name="C" x="-3.81" y="0" drill="0.8128" shape="long"/>
+<pad name="A" x="3.81" y="0" drill="0.8128" shape="long"/>
+<text x="-1.524" y="1.143" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-1.524" y="-2.413" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-1.143" y1="-0.889" x2="-0.762" y2="0.889" layer="21"/>
+<rectangle x1="1.524" y1="-0.254" x2="2.921" y2="0.254" layer="21"/>
+<rectangle x1="-2.921" y1="-0.254" x2="-1.524" y2="0.254" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -14526,14 +14534,13 @@ high speed (Philips)</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="1N5333" prefix="D">
-<description>&lt;b&gt;Z DIODE&lt;/b&gt;&lt;p&gt;
-3.3 V, 5W, 5 percent (Motorola)</description>
+<deviceset name="BZV10" prefix="D">
+<description>&lt;b&gt;Z DIODE&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="ZD" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="C1702-15">
+<device name="" package="DO34Z7">
 <connects>
 <connect gate="1" pin="A" pad="A"/>
 <connect gate="1" pin="C" pad="C"/>
@@ -19228,7 +19235,6 @@ Source: www.kingbright.com</description>
 <part name="D2" library="diode" deviceset="1N4148" device="DO35-7" value=""/>
 <part name="D3" library="diode" deviceset="1N4148" device="DO35-7" value="1N5819"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="D4" library="diode" deviceset="1N5333" device="" value="1N5352A"/>
 <part name="C4" library="rcl" deviceset="C-EU" device="025-025X050" value="0.1uF"/>
 <part name="R7" library="resistor" deviceset="R-EU_" device="0204/2V" value="1k 0.5W"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
@@ -19254,6 +19260,7 @@ Source: www.kingbright.com</description>
 <part name="D5" library="diode" deviceset="1N4148" device="DO35-7" value="1N4148"/>
 <part name="JP2" library="jumper" deviceset="JP1E" device=""/>
 <part name="SL2" library="con-amp-quick" deviceset="M02" device=""/>
+<part name="D6" library="diode" deviceset="BZV10" device="" value="1N5352A"/>
 </parts>
 <sheets>
 <sheet>
@@ -19314,10 +19321,6 @@ Source: www.kingbright.com</description>
 <attribute name="VALUE" x="426.72" y="106.9086" size="1.778" layer="96"/>
 </instance>
 <instance part="GND4" gate="1" x="419.1" y="96.52"/>
-<instance part="D4" gate="1" x="518.16" y="157.48" smashed="yes" rot="R90">
-<attribute name="NAME" x="516.255" y="155.702" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="512.318" y="158.369" size="1.778" layer="96" rot="R180"/>
-</instance>
 <instance part="C4" gate="G$1" x="530.86" y="157.48"/>
 <instance part="R7" gate="G$1" x="518.16" y="170.18" rot="R90"/>
 <instance part="GND5" gate="1" x="518.16" y="144.78"/>
@@ -19358,6 +19361,10 @@ Source: www.kingbright.com</description>
 </instance>
 <instance part="JP2" gate="A" x="358.14" y="165.1" rot="R270"/>
 <instance part="SL2" gate="G$1" x="347.98" y="231.14" rot="R180"/>
+<instance part="D6" gate="1" x="518.16" y="157.48" smashed="yes" rot="R90">
+<attribute name="NAME" x="521.462" y="156.845" size="1.778" layer="95"/>
+<attribute name="VALUE" x="503.682" y="156.591" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -19545,7 +19552,6 @@ Source: www.kingbright.com</description>
 <wire x1="419.1" y1="99.06" x2="419.1" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="D4" gate="1" pin="A"/>
 <wire x1="518.16" y1="154.94" x2="518.16" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="518.16" y1="149.86" x2="530.86" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="2"/>
@@ -19553,6 +19559,7 @@ Source: www.kingbright.com</description>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="518.16" y1="147.32" x2="518.16" y2="149.86" width="0.1524" layer="91"/>
 <junction x="518.16" y="149.86"/>
+<pinref part="D6" gate="1" pin="A"/>
 </segment>
 <segment>
 <pinref part="R20" gate="1" pin="A"/>
@@ -19803,7 +19810,6 @@ Source: www.kingbright.com</description>
 </segment>
 <segment>
 <pinref part="R7" gate="G$1" pin="1"/>
-<pinref part="D4" gate="1" pin="C"/>
 <wire x1="518.16" y1="165.1" x2="518.16" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="1"/>
 <wire x1="518.16" y1="162.56" x2="518.16" y2="160.02" width="0.1524" layer="91"/>
@@ -19812,6 +19818,7 @@ Source: www.kingbright.com</description>
 <junction x="518.16" y="162.56"/>
 <wire x1="518.16" y1="162.56" x2="508" y2="162.56" width="0.1524" layer="91"/>
 <label x="508" y="162.56" size="1.778" layer="95"/>
+<pinref part="D6" gate="1" pin="C"/>
 </segment>
 </net>
 <net name="ERRA_N" class="0">
