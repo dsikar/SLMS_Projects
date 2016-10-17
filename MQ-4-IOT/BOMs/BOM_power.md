@@ -1,0 +1,10 @@
+[Solar panel](http://ebay.eu/2e0dRaB)
+
+[Buck switched regulator](http://bit.ly/2e8Dov7)
+
+[Lipo charger controller](http://ebay.eu/2eI57op)
+
+Extras (Move to IoT BOM)
+
+[NodeMCU](http://bit.ly/2efPd5z)
+
