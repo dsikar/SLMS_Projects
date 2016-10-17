@@ -10,7 +10,3 @@
 
 ![alt text](http://bit.ly/2ee4Cih "LiPo Charger TP4056")
 
-Extras (Move to IoT BOM)
-
-[NodeMCU](http://bit.ly/2efPd5z)
-
