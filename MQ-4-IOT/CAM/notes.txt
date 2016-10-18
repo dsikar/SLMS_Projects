@@ -1,0 +1,6 @@
+https://github.com/grbl/grbl/issues/257
+
+@aegisxlii : I think it's safe to say all you're looking for is covered by the zero setting commands for the various work coordinate systems. I'm a bit rusty these days, but if I remember well, it's of the form G10 L2 P1 X... Y... Z... - this will set current work coordinates to be at offset X, Y, Z from machine zero; in other words, you need to get your machine to where you want your work-zero to be, then need to read your machine coordinates in that point, than use the G10 command with those values to make the work coordinates become zero in the point you are. "P1" sets the G54 (default work) zero, "P2" sets G55 and so on. On limit switches - sure they're nice to have, but frankly so far I've found installing them more trouble than it's worth so I never bothered and just used the G10 method to set my zeroes.
+
+Example - setting a new origin (0,0,0):
+G10 L2 P1 X0 Y0 Z5
