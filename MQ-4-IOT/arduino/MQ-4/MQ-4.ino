@@ -47,7 +47,7 @@ void loop() {
         // configure traged server and url
 
 
-        http.begin("http://52.210.20.21/date.php");
+        http.begin("http://52.209.97.70/date.php");
 
         /*
           // or
@@ -73,7 +73,8 @@ void loop() {
             if(httpCode == HTTP_CODE_OK) {
                 String payload = http.getString();
                 USE_SERIAL.println(payload);
-                USE_SERIAL.println(analogRead(0));
+                // For future reference
+                // USE_SERIAL.println(analogRead(0));
             }
         } else {
             USE_SERIAL.printf("[HTTP] GET... failed, error: %s\n", http.errorToString(httpCode).c_str());
@@ -82,9 +83,9 @@ void loop() {
         http.end();
     }
 
-    delay(5000);
-    digitalWrite(15, LOW);
-    delay(5000);
     digitalWrite(15, HIGH);
+    delay(500);
+    digitalWrite(15, LOW);
+    delay(9500);
 }
 
