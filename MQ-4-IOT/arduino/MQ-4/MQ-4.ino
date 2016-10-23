@@ -16,6 +16,8 @@
 
 ESP8266WiFiMulti WiFiMulti;
 
+int iMQ_4_pin = 0;
+
 void setup() {
 
     pinMode(15, OUTPUT);
@@ -45,10 +47,15 @@ void loop() {
 
         USE_SERIAL.print("[HTTP] begin...\n");
         // configure traged server and url
-
-
-        http.begin("http://52.209.97.70/date.php");
-
+        
+        String httpReq = "http://52.209.97.70/date.php?analogRead=";
+        httpReq += analogRead(iMQ_4_pin);
+        
+        USE_SERIAL.println(httpReq);
+                
+        // http.begin("http://52.209.97.70/date.php");
+        http.begin(httpReq);
+        
         /*
           // or
           http.begin("http://192.168.1.12/test.html");
